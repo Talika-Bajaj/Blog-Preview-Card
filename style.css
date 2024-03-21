@@ -62,3 +62,7 @@ body {
     align-items: center;
     gap: 15px;
 }
+
+.author p {
+    font-weight: 800;
+}
