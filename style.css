@@ -16,12 +16,16 @@
 
 body {
     background-color: var(--Yellow);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     border: 1px solid var(--Black);
     width: 320px;
-    margin: 100px auto;
+    /* margin: 100px auto; */
     padding: 20px;
     background-color: var(--White);
     border-radius: 18px;
