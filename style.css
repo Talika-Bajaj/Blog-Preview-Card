@@ -24,12 +24,17 @@ body {
 
 .card {
     border: 1px solid var(--Black);
-    width: 320px;
-    /* margin: 100px auto; */
-    padding: 20px;
+    width: 85vw;
+    padding: 20px 15px;
     background-color: var(--White);
     border-radius: 18px;
     box-shadow: 8px 10px var(--Black);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 15px;
 }
 
 .img img {
@@ -39,27 +44,29 @@ body {
 
 .para {
     margin: 12px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 15px;
 }
 
 .p-1 {
     font-size: 16px;
     padding: 6px 10px;
-    width: 31%;
+    width: 86px;
     border-radius: 6px;
     font-weight: 800;
     background-color: var(--Yellow);
 }
 
-.p-3 {
+h2 {
     font-weight: 800;
 }
 
 .p-4 {
     color: var(--Grey);
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .author {
@@ -70,4 +77,10 @@ body {
 
 .author p {
     font-weight: 800;
+}
+
+@media screen and (width>400px) {
+    .card {
+        width: 380px;
+    }
 }
